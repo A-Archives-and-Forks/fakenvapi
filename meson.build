@@ -41,7 +41,7 @@ rc_file = configure_file(
   input: 'resource.rc.in',
   output: 'resource.rc',
   configuration: {
-    'FILEVERSION': '1,4,0,0',
+    'FILEVERSION': '1,4,1,0',
   }
 )
 
