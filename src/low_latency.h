@@ -63,7 +63,7 @@ private:
 
 public:
     LowLatency() = default;
-    ~LowLatency() { deinit_current_tech(); };
+    ~LowLatency() { /*deinit_current_tech();*/ };
 
     bool deinit_current_tech();
     void set_forced_fg(std::optional<bool> forced_fg) { this->forced_fg = forced_fg; };

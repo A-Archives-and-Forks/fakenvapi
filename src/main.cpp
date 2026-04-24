@@ -87,8 +87,8 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved) {
 
         break;
     case DLL_PROCESS_DETACH:
-        LowLatencyCtx::get()->deinit_current_tech();
-        LowLatencyCtxXell::get()->deinit_current_tech();
+        // LowLatencyCtx::get()->deinit_current_tech();
+        // LowLatencyCtxXell::get()->deinit_current_tech();
         Config::get().kill_config_monitoring();
         close_logging();
         LowLatencyCtx::shutdown();
